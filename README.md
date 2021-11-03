@@ -1,7 +1,8 @@
 # Frontline
 
 ## What is Frontline
-Frontline is a simple, forever free, brawler style card game. The point is to accomplish what other games like hearthstone, gwent, and runeterra in a simpler, free fashion.
+Frontline is a simple, forever free, open source, brawler style card game. The point is to accomplish what other games like 
+hearthstone, gwent, and runeterra do in a simpler and more portable fashion.
 Something that can be played easily and quickly with just one or two normal decks of playing cards. 
 
 ### Problems I hope to have creative solutions for
@@ -16,14 +17,20 @@ So here are my current solutions:
 1. Should be playable with 2 standard 52 card decks, hopefully even 1. 
 2. I call it frontline because I would like it to play out like two armies meeting in battle, where they each get the same information at the same time, and then have a chance to try and
 respond to that new information with a resolving round after to determine the outcome. 
-3. same as 1.
+3. This should be playable with a standard deck, but I thought it would be fun to turn this into a project. 
 
 ### Rules<sub>(very early outline, subject to change) </sub>
-years of thoughts in my head i need to write down
-1. Draw till certain point
-2. draw support(face cards)
-3. lay out lines
-4. flip
-5. lay out support cards face down? 
+years of thoughts in my head I need to write down
+1. Draw a hand of 7-10 cards, then determine your point total, draw until you are equal to or just past a certain point, i.e. 70points. 
+2. draw support(face cards) from a seperate deck containing only face cards
+3. 'deploy' your army face down, 4 cards wide? maybe 2 rows
+4. flip your army cards over
+5. now, instead of taking turns to lay down support/reinforcement. each player lays them face down whenever, and however many they desire.
+the trick here, is to have diverse enough support cards, to allow for feints, so when they see a weak column get reinforced, they wont know if its a really good 
+support card, or a simple 2card to draw out there reinforcements etc. much like gwent, I hope it will be a fun balance and tactical gambit of where and who to reinforce
+6. flip over the support/reinforcements
+7. resolve the first battle
+8. depending on support cards, some may possibly stay on the field, but essentially, there may be a small draw again of 1 support card and a couple normal cards, with a mulligan/redraw
+followed by another round or two of battles. 
 
 
