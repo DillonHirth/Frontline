@@ -1,1 +1,1 @@
-- Setup classes for army deck, support deck, player hand, player class? 
+- Setup classes for army deck, support deck, player hand, player class? Card class
