@@ -1,5 +1,5 @@
-import decks as deck
+from ..decks import *
 
 
 def test_value_between_two_and_ten():
-    assert deck.Card(10, "heart").value in range(1, 11)
+    assert Card(10, "heart").value in range(1, 11)
