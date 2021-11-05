@@ -1,4 +1,5 @@
-class MainGameLoop
-    ##__init__
-        ##mainDeck()
-        ##supportDeck()
+import decks as deck
+card = deck.Card(10, "heart")
+print(card.value)
+print(card.suite)
+
