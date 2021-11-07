@@ -1,9 +1,12 @@
 from ..decks import *
 
+d = MainDeck()
+
 
 def test_value_between_two_and_ten():
-    assert Card(10, "heart").value in range(1, 11)
+    for item in d.generated_deck:
+        assert item.value in range(2, 11) and item.suit in ['Spade', 'Diamond', 'Club', 'Heart']
+
 
 def test_generate_deck_count():
-    d = MainDeck()
     assert len(d.generated_deck) == 36
