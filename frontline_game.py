@@ -1,5 +1,6 @@
-import decks as deck
-card = deck.Card(10, "heart")
-print(card.value)
-print(card.suite)
+from decks import MainDeck as Deck
+#card = deck.Card(10, "heart")
+d = Deck()
+print(d)
+
 
