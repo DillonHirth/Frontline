@@ -1,1 +1,1 @@
-pytest -v
+pipenv run pytest -v
