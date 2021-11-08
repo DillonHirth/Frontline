@@ -1,20 +1,26 @@
 class Card:
+    """
+
+    """
     def __init__(self, value, suit):
         self.value = value
         self.suit = suit
+
     def __repr__(self):
         return "{} of {}s".format(self.value, self.suit)
 
+
 class MainDeck:
-    ## methods
+    """
+    """
     def __init__(self, deck_count=1):
         self.deck_count = deck_count
-        self.generated_deck = self.generate_deck()
+        self.generated_deck = self.generate_main_deck()
 
     def __repr__(self):
         return "generated_deck: {}".format(self.generated_deck)
 
-    def generate_deck(self):
+    def generate_main_deck(self):
         suit_list = ['Spade', 'Diamond', 'Club', 'Heart']
         value_list = [2, 3, 4, 5, 6, 7, 8, 9, 10]
         deck_list = []
@@ -26,11 +32,13 @@ class MainDeck:
     # draw()
     # shuffle()
 
+
 class SupportDeck(Card):
-    suit = ['S', 'D', 'C', 'H']
-    value_list = ['J', 'Q', 'K', 'A']
+    """
+    """
+    suit = ['Spade', 'Diamond', 'Club', 'Heart']
+    value_list = ['Jack', 'Queen', 'King', 'Ace', 'Joker']
     ## methods
     # count()
     # draw()
     # shuffle()
-
