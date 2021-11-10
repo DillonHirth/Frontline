@@ -1,3 +1,6 @@
+import random
+
+
 class Card:
     """
     basic card object, has value and suit
@@ -40,7 +43,10 @@ class MainDeck:
 
     def draw(self):
         return self.generated_deck.pop(0)
-    # shuffle()
+
+    def shuffle(self):
+        random.shuffle(self.generated_deck)
+        return self
 
 
 class SupportDeck(Card):
