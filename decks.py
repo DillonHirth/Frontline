@@ -1,7 +1,8 @@
 class Card:
     """
-
+    basic card object, has value and suit
     """
+
     def __init__(self, value, suit):
         self.value = value
         self.suit = suit
@@ -11,10 +12,15 @@ class Card:
 
 
 class MainDeck:
+    """main army deck, generates a 36 count deck of number cards
+
+    Methods:
+    card_count
+    draw
+    shuffle
     """
-    """
-    def __init__(self, deck_count=1):
-        self.deck_count = deck_count
+
+    def __init__(self):
         self.generated_deck = self.generate_main_deck()
 
     def __repr__(self):
@@ -28,8 +34,12 @@ class MainDeck:
             for value in value_list:
                 deck_list.append(Card(value, suit))
         return deck_list
-    # count()
-    # draw()
+
+    def card_count(self):
+        return len(self.generated_deck)
+
+    def draw(self):
+        return self.generated_deck.pop(0)
     # shuffle()
 
 
