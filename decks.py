@@ -62,7 +62,7 @@ class MainDeck:
         return self
 
 
-class SupportDeck(Card):
+class SupportDeck:
     """main army deck, generates a 36 count deck of numerical cards
 
     Methods:
