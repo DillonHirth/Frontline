@@ -1,14 +1,13 @@
+"""
+random:
+    https://docs.python.org/3/library/random.html
+"""
 import random
 
 
 class Card:
-    """Class docstrings should contain the following information:
-
-    A brief summary of its purpose and behavior
-    Any public methods, along with a brief description
-    Any class properties (attributes)
-    Anything related to the interface for subclassers, if the class is intended to be subclassed
-    """
+    """card class, very simple, probably an over complication,
+    but I'm waiting to see how pygame works. before i turn it into a dictionary or namedtuple"""
 
     def __init__(self, value, suit):
         self.value = value
@@ -16,17 +15,17 @@ class Card:
         self.ability = " "
 
     def __repr__(self):
-        return "{} of {}s, Skill: {}".format(self.value, self.suit, self.ability)
+        return f"{self.value} of {self.suit}s, Skill: {self.ability}"
 
 
 class Deck:
     """main army deck, generates a 36 count deck of numerical cards
 
     Methods:
-    generate_main_deck
-    card_count
-    draw
-    shuffle
+        generate_main_deck
+        card_count
+        draw
+        shuffle
     """
     def __init__(self, suit_list, value_list):
         self.suit_list = suit_list
@@ -34,7 +33,7 @@ class Deck:
         self.generated_deck = self.generate_deck()
 
     def __repr__(self):
-        return "generated_deck: {}".format(self.generated_deck)
+        return f"generated_deck: {self.generated_deck}"
 
     def generate_deck(self):
         """generates a list of 36 CARD objects, with a numerical value for each suit"""
@@ -56,8 +55,8 @@ class Deck:
         return self.generated_deck.pop(0)
 
     def shuffle(self):
-        """uses random.shuffle() to shuffle the list and returns a reference to the MainDeck object"""
+        """uses random.shuffle() to shuffle the list and returns a
+        reference to the MainDeck object"""
 
         random.shuffle(self.generated_deck)
         return self
-

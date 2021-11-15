@@ -1,3 +1,7 @@
+"""
+deck:
+    deck generator/manipulator class
+"""
 from decks import Deck
 
 
