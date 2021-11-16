@@ -3,4 +3,3 @@
 - add tests to confirm 'shuffled' deck contains everything previously, as I would also like to 
     write my own shuffle method for fun
 - Start researching pygame 
-- pytest.cov for code coverage
