@@ -1,4 +1,5 @@
 from decks import Deck as Deck
+from hand import Hand as Hand
 
 
 class Player:
@@ -14,8 +15,9 @@ class Player:
         face_value_list = ['Jack', 'Queen', 'King', 'Ace', 'Joker']
 
         self.player_name = player_name
-        self.main_deck = Deck(numerical_value_list, suit_list)
-        self.support_deck = Deck(face_value_list, suit_list)
+        self.main_deck = Deck(numerical_value_list, suit_list).shuffle()
+        self.support_deck = Deck(face_value_list, suit_list).shuffle()
+        self.player_starting_hand = Hand(self.main_deck, 50)
 
-    def __repr__(self):
-        return f"{self.value} of {self.suit}s, Skill: {self.ability}"
+    # def __repr__(self):
+    #     return f"{self.value} of {self.suit}s, Skill: {self.ability}"

@@ -34,3 +34,4 @@ support card, or a simple 2card to draw out there reinforcements etc. much like 
 followed by another round or two of battles. 
 
 
+veteran cards? survive first round, stay in hand? 
