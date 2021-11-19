@@ -9,7 +9,7 @@ class Card:
     """card class, very simple, probably an over complication,
     but I'm waiting to see how pygame works. before i turn it into a dictionary or namedtuple"""
 
-    def __init__(self, suit, value):
+    def __init__(self, value, suit):
         self.value = value
         self.suit = suit
         self.ability = " "
@@ -27,7 +27,7 @@ class Deck:
         draw
         shuffle
     """
-    def __init__(self, suit_list, value_list):
+    def __init__(self, value_list, suit_list):
         self.suit_list = suit_list
         self.value_list = value_list
         self.generated_deck = self.generate_deck()

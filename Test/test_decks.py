@@ -2,15 +2,15 @@
 random:
     https://docs.python.org/3/library/random.html
 """
-from ..decks import Deck
+from decks import Deck
 
 suit_list = ['Spade', 'Diamond', 'Club', 'Heart']
 numerical_value_list = [2, 3, 4, 5, 6, 7, 8, 9, 10]
 face_value_list = ['Jack', 'Queen', 'King', 'Ace', 'Joker']
 value_range = range(2, 11)
 
-main_deck_test = Deck(suit_list, numerical_value_list)
-support_deck_test = Deck(suit_list, face_value_list)
+main_deck_test = Deck(numerical_value_list, suit_list)
+support_deck_test = Deck(face_value_list, suit_list)
 
 
 def test_maindeck_value_and_suit():
